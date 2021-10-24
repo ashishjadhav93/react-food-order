@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/style/main.css" />
+    <link rel="stylesheet" href="assests/style/home.css" />
+    <title>Pizzeria</title>
+  </head>
+  <body class="autoScroll">
+    <div class="loader" id="preloader">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 800 600"
+        enable-background="new 0 0 800 600"
+        xml:space="preserve"
+      >
+        <g id="pizza">
+          <g>
+            <path
+              fill="#F7C359"
+              d="M444.05,254.95l-6.95,6.95l-6.08,6.08l-31.51,31.51v0.01h-0.01v-62.49c0.17-0.01,0.33-0.01,0.5-0.01
+               C417.15,237,432.68,243.85,444.05,254.95z"
+            />
+            <path
+              fill="#E01717"
+              d="M437.098,261.902l-37.592,37.592v-53.171C414.185,246.324,427.48,252.274,437.098,261.902z"
+            />
+            <path
+              fill="#43DD28"
+              d="M413.59,259.909c0,0-4.733,2.003-4.366,6.792C409.225,266.701,413.087,265.861,413.59,259.909z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M431.02,267.98l-15.26,15.26c-0.95-0.81-1.7-1.84-2.17-3.04c-1.86-4.74,1.33-10.42,7.11-12.69
+               C424.38,266.07,428.23,266.35,431.02,267.98z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M407.35,291.65l-7.84,7.84v0.01h-0.01v-9.37c0,0,0,0,0.01,0C402.42,289.68,405.24,290.25,407.35,291.65z"
+            />
+            <path
+              fill="#43DD28"
+              d="M401.02,281.55c-0.65-0.53-1.15-1.11-1.51-1.71c-0.01,0-0.01-0.01-0.01-0.02v-5.8
+               c0.01,0,0.01,0.01,0.01,0.01C402.95,278.34,401.02,281.55,401.02,281.55z"
+            />
+            <path
+              fill="#43DD28"
+              d="M399.87,259.48c-0.12-0.09-0.24-0.19-0.36-0.28c0-0.01,0-0.01-0.01-0.01v-5.04c0,0.01,0.01,0.01,0.01,0.02
+               C401.08,257.26,399.87,259.48,399.87,259.48z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#F7C359"
+              d="M462.99,299.5h-63.48v-0.01l7.84-7.84l8.41-8.41l15.26-15.26l6.08-6.08l6.95-6.95
+               C455.63,266.29,462.86,282.05,462.99,299.5z"
+            />
+            <path
+              fill="#E01717"
+              d="M452.68,299.49h-53.17l7.84-7.84l8.41-8.41l15.26-15.26l6.08-6.08
+               C446.73,271.52,452.68,284.81,452.68,299.49z"
+            />
+            <path
+              fill="#43DD28"
+              d="M443.411,291.837c0,0-2.781-5.332-8.332-4.453C435.078,287.384,436.421,291.809,443.411,291.837z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M427.43,284.68c-4.32,1.69-8.87,1-11.67-1.44l15.26-15.26c1.6,0.92,2.85,2.28,3.53,4.01
+               C436.4,276.73,433.22,282.41,427.43,284.68z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M410.87,299.49h-11.36l7.84-7.84c1.4,0.9,2.48,2.17,3.1,3.74C410.97,296.72,411.1,298.12,410.87,299.49z"
+            />
+            <path
+              fill="#43DD28"
+              d="M428.14,296.27c-0.6,1.47-1.32,2.49-2.05,3.22h-3.14C424.6,296.61,428.14,296.27,428.14,296.27z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#F7C359"
+              d="M463,300c0,17.4-7.05,33.14-18.45,44.55l-35.99-35.99l-2.16-2.16l-6.89-6.89l-0.01-0.01h63.49
+               C463,299.67,463,299.83,463,300z"
+            />
+            <path
+              fill="#E01717"
+              d="M452.68,299.49v0.01c0,14.7-5.95,27.98-15.58,37.6l-28.54-28.54l-2.16-2.16l-6.89-6.89v-0.02H452.68z"
+            />
+
+            <ellipse
+              transform="matrix(0.9311 -0.3648 0.3648 0.9311 -84.8666 178.987)"
+              fill="#FFFFF8"
+              cx="431.245"
+              cy="314.088"
+              rx="11.255"
+              ry="9.22"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M410.87,299.49c0.01,0.01,0,0.01,0,0.01c-0.4,2.59-2.01,5.1-4.47,6.9l-6.89-6.89l-0.01-0.01h0.01v-0.01
+               H410.87z"
+            />
+            <path
+              fill="#43DD28"
+              d="M411.1,311.1l-2.54-2.54c0.11-1.03,0.38-1.74,0.38-1.74C410.36,308.45,410.93,309.92,411.1,311.1z"
+            />
+            <path
+              fill="#43DD28"
+              d="M426.09,299.49c-0.01,0-0.01,0.01-0.01,0.01c-1.87,1.83-3.78,1.66-3.78,1.66
+               c0.15-0.63,0.37-1.18,0.64-1.66l0.01-0.01H426.09z"
+            />
+            <path
+              fill="#43DD28"
+              d="M434.039,325.582c0,0-0.86,3.511,1.995,5.316C436.034,330.898,437.184,328.367,434.039,325.582z"
+            />
+          </g>
+          <g>
+            <g>
+              <path
+                fill="#F7C359"
+                d="M444.55,344.55C433.14,355.95,417.4,363,400,363c-0.17,0-0.33,0-0.5-0.01V299.5L444.55,344.55z"
+              />
+              <path
+                fill="#E01717"
+                d="M399.505,352.676v-53.171l37.592,37.592C427.48,346.726,414.185,352.676,399.505,352.676z"
+              />
+              <path
+                fill="#43DD28"
+                d="M418.326,330.378c0,0-3.056,4.475,0,8.513C418.326,338.892,421.273,335.945,418.326,330.378z"
+              />
+            </g>
+            <path
+              fill="#FFFFF8"
+              d="M403.34,343.09c-1.28,0.5-2.57,0.79-3.83,0.89v-18.84c4.83-0.75,9.39,1.31,10.94,5.26
+               C412.31,335.14,409.12,340.82,403.34,343.09z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M406.4,306.4c-0.91,0.67-1.94,1.24-3.06,1.68c-1.27,0.5-2.57,0.79-3.83,0.89v-9.46L406.4,306.4z"
+            />
+            <path
+              fill="#43DD28"
+              d="M410.64,314.08c-2.04-1.7-2.25-3.97-2.08-5.52l2.54,2.54C411.35,312.93,410.64,314.08,410.64,314.08z"
+            />
+          </g>
+          <g>
+            <g>
+              <path
+                fill="#F7C359"
+                d="M399.5,299.5v63.49c-17.45-0.13-33.21-7.36-44.55-18.94L399.5,299.5z"
+              />
+              <path
+                fill="#E01717"
+                d="M399.51,299.51v53.17h-0.01c-14.68,0-27.97-5.95-37.6-15.58l21.94-21.93l2.94-2.94l5.28-5.27l7.44-7.44
+                   L399.51,299.51z"
+              />
+              <path
+                fill="#43DD28"
+                d="M382.178,328.245c0,0-2.004,5.185,1.994,8.502C384.172,336.748,386.425,333.114,382.178,328.245z"
+              />
+            </g>
+            <path
+              fill="#FFFFF8"
+              d="M399.51,325.14v18.84h-0.01c-4.48,0.35-8.56-1.68-10.01-5.37c-1.85-4.74,1.33-10.42,7.12-12.69
+               c0.96-0.37,1.93-0.63,2.89-0.77C399.5,325.15,399.5,325.14,399.51,325.14z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M399.51,299.51v9.46h-0.01c-2.82,0.23-5.49-0.51-7.44-2.01l7.44-7.44L399.51,299.51z"
+            />
+            <path
+              fill="#43DD28"
+              d="M386.78,312.23c-0.25,3.58-2.52,4.83-2.52,4.83c-0.25-0.66-0.38-1.29-0.42-1.89L386.78,312.23z"
+            />
+          </g>
+          <g>
+            <g>
+              <path
+                fill="#F7C359"
+                d="M399.5,299.5l-44.55,44.55C343.85,332.68,337,317.15,337,300c0-0.17,0-0.33,0.01-0.5H399.5z"
+              />
+              <path
+                fill="#E01717"
+                d="M399.51,299.51l-7.45,7.45l-5.28,5.27l-2.94,2.94L361.9,337.1c-9.63-9.62-15.58-22.9-15.58-37.6v-0.01
+                   h53.17L399.51,299.51z"
+              />
+              <path
+                fill="#43DD28"
+                d="M364.495,321.027c0,0-3.168,2.485-1.909,6.031C362.586,327.058,365.334,325.631,364.495,321.027z"
+              />
+            </g>
+            <path
+              fill="#FFFFF8"
+              d="M372.09,313.85c-4.8,3.95-11.31,3.96-14.54,0.02c-3.24-3.93-1.96-10.32,2.84-14.27
+               c0.04-0.04,0.09-0.07,0.13-0.1h14.35c0.02,0.03,0.05,0.05,0.07,0.08C378.17,303.52,376.9,309.91,372.09,313.85z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M399.51,299.51l-7.45,7.45c0,0.01-0.01-0.01-0.01-0.01c-1.14-0.85-2.03-1.99-2.56-3.35
+               c-0.52-1.32-0.64-2.72-0.42-4.1h10.43L399.51,299.51z"
+            />
+            <path
+              fill="#43DD28"
+              d="M386.78,312.22v0.01l-2.94,2.94c0-0.01,0-0.01,0-0.01c-0.22-3.55,2.72-5.96,2.72-5.96
+               C386.79,310.35,386.85,311.35,386.78,312.22z"
+            />
+          </g>
+          <g>
+            <g>
+              <path
+                fill="#F7C359"
+                d="M399.5,299.5h-62.49c0.13-17.2,7.15-32.75,18.44-44.05l6.45,6.45l25.73,25.73l1.64,1.64l3.74,3.74
+                   L399.5,299.5z"
+              />
+              <path
+                fill="#E01717"
+                d="M399.495,299.495h-53.171c0-14.68,5.95-27.975,15.578-37.592L399.495,299.495z"
+              />
+              <path
+                fill="#43DD28"
+                d="M361.566,285.866c0,0-5.352,0.24-6.731,5.054C354.835,290.92,358.914,291.501,361.566,285.866z"
+              />
+              <path
+                fill="#43DD28"
+                d="M370.114,281.053c0,0-1.164,5.763,3.596,8.509C373.71,289.561,375.41,285.371,370.114,281.053z"
+              />
+              <path
+                fill="#43DD28"
+                d="M363.55,268.291c0,0-3.316,4.856,0,9.237C363.55,277.528,366.747,274.331,363.55,268.291z"
+              />
+            </g>
+            <path
+              fill="#FFFFF8"
+              d="M374.87,299.5h-14.35l0.01-0.01c4.75-3.8,11.1-3.8,14.33,0C374.87,299.49,374.87,299.5,374.87,299.5z"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M399.5,299.5h-10.43v-0.01c0.37-2.39,1.79-4.72,3.94-6.48L399.5,299.5z"
+            />
+            <path
+              fill="#43DD28"
+              d="M389.27,289.27c-1.53,1.82-3.28,1.9-3.28,1.9c0.15-1.58,0.83-2.72,1.64-3.54L389.27,289.27z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#F7C359"
+              d="M399.5,237.01v62.49l-6.49-6.49l-3.74-3.74l-1.64-1.64L361.9,261.9l-6.45-6.45
+               C366.75,244.16,382.3,237.14,399.5,237.01z"
+            />
+            <path
+              fill="#E01717"
+              d="M399.51,246.32v53.17h-0.02l-6.48-6.48l-3.74-3.74l-1.64-1.64L361.9,261.9
+               c9.63-9.63,22.92-15.58,37.6-15.58H399.51z"
+            />
+
+            <ellipse
+              transform="matrix(0.9311 -0.3648 0.3648 0.9311 -71.4067 158.5626)"
+              fill="#FFFFF8"
+              cx="383.923"
+              cy="268.255"
+              rx="11.255"
+              ry="9.22"
+            />
+            <path
+              fill="#FFFFF8"
+              d="M399.5,290.13v9.37l-6.49-6.49c1.04-0.85,2.25-1.57,3.6-2.1C397.57,290.54,398.54,290.28,399.5,290.13z"
+            />
+            <path
+              fill="#43DD28"
+              d="M399.5,274.02v5.8c-1.81-2.97-0.53-6.43-0.53-6.43C399.16,273.6,399.34,273.81,399.5,274.02z"
+            />
+            <path
+              fill="#43DD28"
+              d="M399.5,254.15v5.04c-3.56-3-2.02-7.78-2.02-7.78C398.42,252.37,399.07,253.29,399.5,254.15z"
+            />
+            <path
+              fill="#43DD28"
+              d="M391.01,285.67c-0.42,1.64-1.06,2.8-1.74,3.6l-1.64-1.64C389.1,286.12,391.01,285.67,391.01,285.67z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="home" id="home">
+      <header class="header transition-linit-1">
+        <nav class="nav">
+          <div class="wrapper-container">
+            <div class="logo onLoad">
+              <a href="#">#Pizzeria.</a>
+            </div>
+            <div id="navbar-text" class="main_list">
+              <ul class="navlinks">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+            <span class="nav-mobile-icon">
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+          </div>
+        </nav>
+      </header>
+      <section
+        class="
+          container-fluid
+          atf-section
+          flex
+          justify-center
+          align-center
+          section-1
+        "
+      >
+        <div class="content-wrapper">
+          <div class="row flex justify-center flex-dir-col content-block">
+            <h1>GRAND</h1>
+            <div class="sub-text-btn flex align-center">
+              <p>OPENING</p>
+              <a class="button-cta flex align-center justify-center" id="CTA1">
+                <span class="__temp-cta-txt">READ MORE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid btf-section flex align-center section-2">
+        <div class="content-btf-wrapper flex justify-center align-center">
+          <div class="row format-text">
+            <p class="vertical-Text">new format</p>
+          </div>
+          <div class="row flex flex-dir-col">
+            <h3>What new ?</h3>
+            <ul>
+              <li>| Sed do eiusmod tempor incididunt ut Labore et</li>
+              <li>| Dolore magna aliqua</li>
+              <li>| Quis ipsum suspendisse ultrices gravida</li>
+            </ul>
+          </div>
+        </div>
+        <img class="right-img" src="./assests/Images/btf-1.png" alt="" />
+      </section>
+      <section class="container-fluid flex align-center section-3">
+        <ul class="flex align-center justify-center">
+          <li class="flex justify-center flex-dir-col">
+            <h3>| new format</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
+              tation omne ullamco laboris nisi ut aliqolore.
+            </p>
+          </li>
+          <li class="flex justify-center flex-dir-col">
+            <h3>|| master classes</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
+              tation omne ullamco laboris nisi ut aliqolore.
+            </p>
+          </li>
+          <li class="flex justify-center flex-dir-col">
+            <h3>||| pizza restaurant</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
+              tation omne ullamco laboris nisi ut aliqolore.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="container-fluid flex flex-dir-col section-4">
+        <h3 class="title-text">#pizzeria.</h3>
+        <div class="sub-title-block">
+          <h3 class="sub-title">our new menu</h3>
+        </div>
+
+        <div class="wrapper-container">
+          <div class="menu-item">
+            <ul>
+              <li class="flex justify-center">
+                <div class="col-md-8 col-sm-8 flex justify-center flex-dir-col">
+                  <h3>| eiusmod Sed do</h3>
+                  <p>(tempor, incididunt, utas, labore, etws)</p>
+                </div>
+                <div class="col-md-2 col-sm-2 item-price">
+                  <p class="item-price">10 $</p>
+                </div>
+              </li>
+              <li class="flex justify-center">
+                <div class="col-md-8 col-sm-8 flex justify-center flex-dir-col">
+                  <h3>|| DO Dolore</h3>
+                  <p>(magna, aliqua, lorem)</p>
+                </div>
+                <div class="col-md-2 col-sm-2 item-price">
+                  <p class="item-price">14 $</p>
+                </div>
+              </li>
+              <li class="flex justify-center">
+                <div class="col-md-8 col-sm-8 flex justify-center flex-dir-col">
+                  <h3>||| eiusmod Sed do</h3>
+                  <p>(tempor, incididunt, utas, labore, etws)</p>
+                </div>
+                <div class="col-md-2 col-sm-2 item-price">
+                  <p class="">20 $</p>
+                </div>
+              </li>
+              <li class="flex justify-center">
+                <div class="col-md-8 col-sm-8 flex justify-center flex-dir-col">
+                  <h3>|| DO Dolore</h3>
+                  <p>(magna, aliqua, lorem)</p>
+                </div>
+                <div class="col-md-2 col-sm-2 item-price">
+                  <p class="">10 $</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="othermenu-item flex flex-dir-col justify-center align-center"
+        >
+          <ul>
+            <li><p>||| _ top in menu</p></li>
+            <li><p>|| _ sale iteam</p></li>
+            <li><p>| _ made by shef</p></li>
+          </ul>
+        </div>
+      </section>
+      <section class="container-fluid btf-section flex align-center section-5">
+        <div
+          class="content-wrapper flex flex-dir-col justify-center align-center"
+        >
+          <h2>ABOUT OUR <span>CONCEPT</span></h2>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis
+          </p>
+          <ul class="row text-white">
+            <li>Pizza</li>
+            <li>Modern concept</li>
+            <li>Story from shef</li>
+            <li>Gallery</li>
+          </ul>
+        </div>
+      </section>
+      <section class="container-fluid flex section-6">
+        <div class="content-wrapper flex flex-dir-col">
+          <h3 class="title-text text-white">MasterClass</h3>
+          <div class="content-block">
+            <h2 class="row text-white">
+              | the recipe for the most delicious pizza dough |
+            </h2>
+            <h3 class="row text-white sub-title-text">waiting for you!</h3>
+            <div class="row flex-dir-col align-end">
+              <p class="text-white">Price 15$</p>
+              <p class="text-white">12:00-15:00</p>
+            </div>
+          </div>
+          <a class="button-cta-2 flex">
+            <span class="__temp-cta-txt text-white">APPLY</span>
+          </a>
+        </div>
+      </section>
+      <section class="container-fluid flex section-7">
+        <div class="content-wrapper flex flex-dir-col">
+          <h2>Gallery</h2>
+          <div class="gallery-images">
+            <div class="flex">
+              <img class="g-i-50" src="assests/Images/gallert-1.png" alt="" />
+              <img class="g-i-25" src="assests/Images/gallert-2.png" />
+              <img class="g-i-25" src="assests/Images/gallert-3.png" />
+            </div>
+          </div>
+          <h2 class="title-2 text-white">#pizzeria.</h2>
+          <div class="socialmedia-text">
+            <div class="wrapper-container flex justify-center">
+              <div class="media-text">
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis
+                </p>
+              </div>
+              <div class="media-icon">
+                <p class="text-white">| find us here</p>
+                <ul class="flex align-center">
+                  <li>
+                    <a href="#">
+                      <img src="assests/Images/Instagram.svg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="assests/Images/Facebook.svg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="assests/Images/Twitter.svg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="assests/Images/WhatsApp.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+                <p class="text-white">| ask as here</p>
+                <p class="send-mail">
+                  <a href="mailto:someone@example.com">www.#pizzeria.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-container container-fluid">
+        <div class="container">
+          <div class="row footer-block">
+            <div class="footer-disclaimer">
+              <h2 class="text-white">ABOUT</h2>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
+                do eiusmod tempor incididunt ultimam quantum
+              </p>
+            </div>
+            <div class="footerlink flex justify-center">
+              <div class="footerlink-menu">
+                <h3 class="title-text text-white">MENU</h3>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-white" href="#">Team</a></li>
+                  <li><a class="text-white" href="#">Join us</a></li>
+                  <li><a class="text-white" href="#">Ethic</a></li>
+                  <li><a class="text-white" href="#">Goals</a></li>
+                </ul>
+              </div>
+              <div class="footerlink-menu">
+                <h3 class="title-text text-white">SHEF</h3>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-white" href="#">Team</a></li>
+                  <li><a class="text-white" href="#">Join us</a></li>
+                  <li><a class="text-white" href="#">Ethic</a></li>
+                  <li><a class="text-white" href="#">Goals</a></li>
+                </ul>
+              </div>
+              <div class="footerlink-menu">
+                <h3 class="title-text text-white">CONTACT</h3>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-white" href="#">Team</a></li>
+                  <li><a class="text-white" href="#">Join us</a></li>
+                  <li><a class="text-white" href="#">Ethic</a></li>
+                  <li><a class="text-white" href="#">Goals</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assests/script/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assests/script/main.js"></script>
+  </body>
+</html>
